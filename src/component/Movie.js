@@ -10,7 +10,7 @@ const Movie = (props) => {
             `} alt="image card" style={{ width: "100%", height: 360 }} />
           }
         </div>
-        <div className="card-content">
+        <div className="card-content center">
           <p><a href="#">View Details</a></p>
 
         </div>
