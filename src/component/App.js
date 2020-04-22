@@ -28,11 +28,15 @@ class App extends Component {
       .then(data => data.json())
       .then(data => {
         console.log("App -> handleSubmit -> data", data)
-        
+        if (this.state.searchTerm.trim(
+
+        )) {
           this.setState({
             movies: [...data.results], totalResults: data.total_results
           })
-        
+        }
+
+
       })
   }
 
