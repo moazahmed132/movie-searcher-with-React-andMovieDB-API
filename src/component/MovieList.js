@@ -12,7 +12,9 @@ const movieList = (props) => {
               return (
                 <Movie
                   key={movie.id}
-                  image={movie.poster_path} />
+                  image={movie.poster_path}
+                  viewMovieInfo={props.viewMovieInfo}
+                  movieId={movie.id} />
               )
             })
           }
