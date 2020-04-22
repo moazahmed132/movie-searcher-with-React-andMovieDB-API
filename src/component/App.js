@@ -28,11 +28,11 @@ class App extends Component {
       .then(data => data.json())
       .then(data => {
         console.log("App -> handleSubmit -> data", data)
-        if (data.status >= 200 && data.status < 300 && this.state.searchTerm) {
+        
           this.setState({
             movies: [...data.results], totalResults: data.total_results
           })
-        }
+        
       })
   }
 
